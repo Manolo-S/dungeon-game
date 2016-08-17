@@ -1,0 +1,11 @@
+{
+  "name": "dungeon-game",
+  "version": "0.0.1",
+  "description": "",
+  "engines": {
+    "node": "5.6.0"
+  },
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}

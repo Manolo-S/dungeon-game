@@ -1,0 +1,141 @@
+$title-color: #992900;
+$cell-border-color: #000;
+$stats-color: #000d0d;
+$message-color:#0f0;
+$message-screen-color: #000d0d;
+
+@mixin cell-image($image){
+  background-image: url($image);
+  background-size: cover;
+}
+
+body {
+  background-image: url('./img/grey-background.jpg');
+  background-repeat: repeat;
+}
+
+h1 {
+  font-family: 'Shojumaru', cursive;
+  font-size: 2.7em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  text-align: center;
+  color: $title-color;
+}
+
+#main {
+  display: flex;
+}
+
+#grid {
+  text-align: center;
+  flex: 1;
+}
+
+table {
+  display: inline;
+}
+
+tbody {
+  border: 2px solid $cell-border-color;
+}
+
+td {
+  border: 1px solid $cell-border-color; /*transparent;*/
+}
+
+
+
+td {
+  width: 2.4em;
+  height: 2.4em;
+}
+
+#hundred-eyes-full {
+  max-width: 15%;
+  max-height: 25em;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+#cricket-master-full {
+  max-width: 15%;
+  max-height: 25em;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+p {
+  display: inline-block;
+  margin-left: 3em;
+}
+
+#stats {
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-right: 2.5em;
+  text-align: center;
+  color: $stats-color;
+}
+
+.floor {
+  @include cell-image('./img/PolarGranite.jpg');
+}
+
+.wall {
+  @include cell-image('./img/WornBrownBrickworksmall.jpg');
+}
+
+.hundredEyes {
+  @include cell-image('./img/HundredEyes.jpg');
+}
+
+.warrior {
+  @include cell-image('./img/chinese-warrior.jpg');
+}
+
+.cm {
+  @include cell-image('./img/cricket-master.jpg');
+}
+
+.health-supplies {
+  @include cell-image('./img/HealthSupplies.jpg');
+}
+
+.qiang {
+  @include cell-image('./img/Qiang.jpg');
+}
+
+.jian {
+  @include cell-image('./img/Jian.jpg');
+}
+
+.dao {
+  @include cell-image('./img/Dao.jpg');
+}
+
+.darkness {
+  @include cell-image('./img/darkness.jpg');
+}
+
+#containing-table {
+  display: table;
+  width: 42em;
+  height: 5em;
+  margin: 0 auto 3em;
+}
+
+#message_screen {
+  display: table-cell;
+  padding: 2em;
+  text-align: center;
+  vertical-align: middle;
+  color: $message-color;
+  border-radius: 1em;
+  background-color: $message-screen-color;
+}
+
+a.github {
+  text-align: center;
+  font-size: 2em;
+}
